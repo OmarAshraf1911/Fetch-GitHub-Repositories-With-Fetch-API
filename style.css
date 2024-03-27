@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  color: #fff;
+}
+
+.repos-container {
+  width: 800px;
+  background-color: #f5f3f4;
+  margin: auto;
+}
+
+.repos-container .get-repos {
+  padding: 20px;
+  display: flex;
+  background-color: #0b090a;
+}
+
+.repos-container .get-repos input {
+  width: 100%;
+  padding: 12px 20px;
+  border: none;
+  font-size: 20px;
+  height: 55px;
+  border-radius: 5px;
+  transition: 0.1s ease;
+}
+
+.repos-container .get-repos input:focus {
+  outline: 3px solid #2ec4b6;
+}
+
+.repos-container .get-repos .get-button {
+  width: 140px;
+  margin-left: 10px;
+  height: 55px;
+  background-color: #2ec4b6;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.repos-container .get-repos .get-button:active {
+  transform: scale(0.97);
+}
+
+.repos-container .get-repos .get-button:hover {
+  color: #840032;
+  background-color: #fff;
+}
+
+.repos-container .show-data {
+  padding: 20px;
+  background-color: #f5f3f4;
+  color: #000;
+  font-size: 20px;
+}
+
+.repos-container .show-data .repo-box {
+  background-color: #e0e0e0;
+  padding: 15px;
+}
+
+.repos-container .show-data .repo-box:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.repos-container .show-data .repo-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.repos-container .show-data .repo-box a {
+  position: absolute;
+  right: 120px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #2ec4b6;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.repos-container .show-data .repo-box span {
+  color: #000;
+  background-color: #cbf3f0;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 18px;
+  transition: 0.3s ease;
+}
+
+.repos-container .show-data .repo-box a:hover {
+  color: #840032;
+  background-color: #fff;
+}
